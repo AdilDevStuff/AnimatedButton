@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709932839
+icon.png::CompressedTexture2D::8431799419246539881::1709921772::1709921788::1::::<><>::
+::res://addons/::1709922031
+::res://addons/animatedbutton/::1709932804
+AnimatedButton.gd::GDScript::-1::1709932483::0::1::::AnimatedButton<>Button<>::
+Button.svg::CompressedTexture2D::6741438287717930173::1709932772::1709932789::1::::<><>::
+plugin.cfg::TextFile::-1::1709921910::0::1::::<><>::
+plugin.gd::GDScript::-1::1709932804::0::1::::<>EditorPlugin<>::
+::res://demo/::1709932822
+demo.tscn::PackedScene::7128776508630156238::1709932822::0::1::::<><>::
