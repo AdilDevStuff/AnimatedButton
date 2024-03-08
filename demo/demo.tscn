@@ -25,4 +25,3 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Hover me"
 script = ExtResource("1_voms5")
-animate_position = true
