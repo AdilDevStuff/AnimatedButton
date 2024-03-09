@@ -1,6 +1,9 @@
 # Animated Button
 Custom button node that gives you some basic hover animations by default for scale and position.
 
+![AnimatedButtonDemo](https://github.com/AdilDevStuff/AnimatedButton/assets/94475453/dc4ba99a-49cd-47c0-9ab1-2dfa59b6f79b)
+
+
 # How to use
 1. Simply download the addon from release tab and copy it in your `res://addons` folder.
 2. Then enable the plugin from the project settings.
