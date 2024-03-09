@@ -10,18 +10,114 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="AnimatedButton" type="Button" parent="."]
+[node name="ScaleUp" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -102.0
-offset_top = -27.0
-offset_right = 102.0
-offset_bottom = 27.0
+offset_left = -448.0
+offset_top = -100.0
+offset_right = -256.0
+offset_bottom = -38.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Hover me"
+text = "Scale Hover"
 script = ExtResource("1_voms5")
+
+[node name="ScaleDown" type="Button" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -100.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Scale Hover"
+script = ExtResource("1_voms5")
+scale_intensity = 0.9
+
+[node name="PositionUp" type="Button" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -448.0
+offset_top = 28.0
+offset_right = -256.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Position Hover Up"
+script = ExtResource("1_voms5")
+animate_scale = false
+animate_position = true
+position_value = Vector2(0, -30)
+
+[node name="PositionDown" type="Button" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = 28.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Position Hover Down"
+script = ExtResource("1_voms5")
+animate_scale = false
+animate_position = true
+position_value = Vector2(0, 30)
+
+[node name="PositionLeft" type="Button" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = 28.0
+offset_right = 256.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Position Hover Left"
+script = ExtResource("1_voms5")
+animate_scale = false
+animate_position = true
+position_value = Vector2(-30, 0)
+
+[node name="PositionRight" type="Button" parent="."]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 320.0
+offset_top = 28.0
+offset_right = 512.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Position Hover Right"
+script = ExtResource("1_voms5")
+animate_scale = false
+animate_position = true
+position_value = Vector2(30, 0)
