@@ -6,6 +6,7 @@ extends Button
 
 @export var animate_scale: bool = true
 @export var animate_position: bool = false
+@export var transition_type: Tween.TransitionType
 
 @export_group("Scale Properties", "scale_")
 @export var scale_intensity: float = 1.1
@@ -56,7 +57,7 @@ func hover_position_animation():
 
 # Global tween method
 func tweening(object: Object, property: NodePath, final_value: Variant, duration: float):
-	tween = create_tween().set_parallel(true)
+	tween = create_tween().set_parallel(true).set_trans(transition_type)
 	tween.tween_property(object, property, final_value, duration)
 	await tween.finished
 	tween.kill()
