@@ -1,7 +1,7 @@
 # Animated Button
 A custom button node for Godot that provides smooth, container-safe hover animations by default for scale and position, plus a highly flexible system to animate any custom property!
 
-![AnimatedButtonDemo](https://github.com/AdilDevStuff/AnimatedButton/assets/94475453/dc4ba99a-49cd-47c0-9ab1-2dfa59b6f79b)
+[Screencast_20260812_202554.webm](https://github.com/user-attachments/assets/81d4bfbc-27aa-4179-b756-6d5d4affdedd)
 
 ## Features
 * **Container-Safe Animations:** Uses Godot's new `offset_transform` properties. Your buttons will now animate perfectly inside `VBoxContainer`, `HBoxContainer`, and other UI layouts without fighting the container or breaking the UI flow.
