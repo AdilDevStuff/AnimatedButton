@@ -1,27 +1,41 @@
 # Animated Button
-Custom button node that gives you some basic hover animations by default for scale and position.
+A custom button node for Godot that provides smooth, container-safe hover animations by default for scale and position, plus a highly flexible system to animate any custom property!
 
 ![AnimatedButtonDemo](https://github.com/AdilDevStuff/AnimatedButton/assets/94475453/dc4ba99a-49cd-47c0-9ab1-2dfa59b6f79b)
 
+## Features
+* **Container-Safe Animations:** Uses Godot's new `offset_transform` properties. Your buttons will now animate perfectly inside `VBoxContainer`, `HBoxContainer`, and other UI layouts without fighting the container or breaking the UI flow.
+* **Custom Property Animations:** Want to animate the button's color, rotation, or a shader parameter? You can now animate *any* property via the Inspector without writing extra code.
+* **Highly Optimized:** Signal-based design uses zero CPU power while sitting idle. Smart tween management ensures animations never overlap or glitch if the mouse moves quickly.
+* **Auto-Centering:** Automatically scales perfectly from its center, even if the button is dynamically resized.
 
-# How to use
-1. Simply download the addon from release tab and copy it in your `res://addons` folder.
-2. Then enable the plugin from the project settings.
-3. And finally a new custom node called `AnimatedButton` will appear when creating a new node.
+## How to use
+1. Simply download the addon from the releases tab and copy it into your `res://addons` folder.
+2. Enable the plugin from `Project -> Project Settings -> Plugins`.
+3. A new custom node called `AnimatedButton` will now appear when creating a new node.
 
-# Properties Overview:
-`Duration` -> Its the duration for each animation
+## Properties Overview
 
-`animate_scale` ->  Check if you wanna animate the scale property of button.
+### Animation Settings
+* **`Duration`** -> The time (in seconds) it takes to complete the hover animation.
+* **`Transition Type`** -> The animation curve (e.g., Sine, Bounce, Elastic).
+* **`Easing Type`** -> The direction of the easing (Ease In, Ease Out, etc.) for smoother motion.
 
-`animate_position` -> Check if you wanna animate the position property of button.
+### Scale Properties
+* **`Animate Scale`** -> Check if you want to animate the scale property of the button.
+* **`Scale Intensity`** -> The target scale multiplier when hovered (e.g., `1.1` makes it 10% larger).
 
-`Scale Properties` ->  `intensity` ->  It is the scale hover value, set this according to your desired scale value.
+### Position Properties
+* **`Animate Position`** -> Check if you want to animate the position of the button.
+* **`Position Offset`** -> The relative offset (Vector2) the button will move to when hovered (e.g., `(0, -4)` moves it up 4 pixels).
 
-`Position Properties` -> `position_value` -> It is the position hover value, the button will animate to this position from its previous position.
+### Custom Properties
+* **`Custom Animations`** -> An array that accepts `CustomHoverProperty` resources. Simply type the name of the property you want to animate (like `modulate` or `theme_override_colors/font_color`) and set your target hover value!
 
-This custom node is still being worked on and is very basic as of now. Im going to add more stuff into it while keeping it simple and easy to use.
+## Ideas for the future:
+- [x] Add custom properties to animate. *(Added in latest update!)*
+- [ ] Add click/pressed animations (e.g., button slightly shrinks when clicked).
+- [ ] Enter and exit animations like fade, pop, etc., when the UI initially loads.
 
-# Ideas for future:
-- Add custom properties to animate.
-- Enter and exit animations like fade, pop etc.
+---
+*This custom node is still being actively worked on. I'm going to add more features into it while keeping it simple, lightweight, and easy to use.*

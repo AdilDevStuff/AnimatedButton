@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8th54fejhpec"]
+[gd_scene format=3 uid="uid://c8th54fejhpec"]
 
-[ext_resource type="Script" path="res://addons/animatedbutton/AnimatedButton.gd" id="1_voms5"]
+[ext_resource type="Script" uid="uid://cbgjctvimbp5j" path="res://addons/animatedbutton/AnimatedButton.gd" id="1_voms5"]
+[ext_resource type="Script" uid="uid://cdoahbjct02ky" path="res://addons/animatedbutton/custom_property.gd" id="2_ytiva"]
 
-[node name="Demo" type="Control"]
+[sub_resource type="Resource" id="Resource_dar0o"]
+script = ExtResource("2_ytiva")
+property_path = "modulate"
+hover_value = Color(1, 0, 0, 1)
+metadata/_custom_type_script = "uid://cdoahbjct02ky"
+
+[sub_resource type="Resource" id="Resource_ytiva"]
+script = ExtResource("2_ytiva")
+property_path = "text"
+hover_value = "Custom Animation (Text)"
+metadata/_custom_type_script = "uid://cdoahbjct02ky"
+
+[node name="Demo" type="Control" unique_id=545740053]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,23 +23,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ScaleUp" type="Button" parent="."]
+[node name="ScaleUp" type="Button" parent="." unique_id=1411606676]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -448.0
-offset_top = -100.0
-offset_right = -256.0
-offset_bottom = -38.0
+offset_left = -473.0
+offset_top = -160.0
+offset_right = -281.0
+offset_bottom = -98.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Scale Hover"
 script = ExtResource("1_voms5")
 
-[node name="ScaleDown" type="Button" parent="."]
+[node name="ScaleDown" type="Button" parent="." unique_id=444830990]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 8
@@ -34,16 +47,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = -100.0
-offset_bottom = -38.0
+offset_left = -217.0
+offset_top = -160.0
+offset_right = -25.0
+offset_bottom = -98.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Scale Hover"
 script = ExtResource("1_voms5")
 scale_intensity = 0.9
 
-[node name="PositionUp" type="Button" parent="."]
+[node name="PositionUp" type="Button" parent="." unique_id=420686893]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 8
@@ -51,19 +65,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -448.0
-offset_top = 28.0
-offset_right = -256.0
-offset_bottom = 92.0
+offset_left = -473.0
+offset_top = -32.0
+offset_right = -281.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Position Hover Up"
 script = ExtResource("1_voms5")
-animate_scale = false
 animate_position = true
-position_value = Vector2(0, -30)
+position_offset = Vector2(0, -15)
 
-[node name="PositionDown" type="Button" parent="."]
+[node name="PositionDown" type="Button" parent="." unique_id=1586049260]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 8
@@ -71,18 +84,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = 28.0
-offset_bottom = 92.0
+offset_left = -217.0
+offset_top = -32.0
+offset_right = -25.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Position Hover Down"
 script = ExtResource("1_voms5")
-animate_scale = false
 animate_position = true
-position_value = Vector2(0, 30)
+position_offset = Vector2(0, 15)
 
-[node name="PositionLeft" type="Button" parent="."]
+[node name="PositionLeft" type="Button" parent="." unique_id=1789162940]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 8
@@ -90,19 +103,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 64.0
-offset_top = 28.0
-offset_right = 256.0
-offset_bottom = 92.0
+offset_left = 39.0
+offset_top = -32.0
+offset_right = 231.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Position Hover Left"
 script = ExtResource("1_voms5")
-animate_scale = false
 animate_position = true
-position_value = Vector2(-30, 0)
+position_offset = Vector2(-15, 0)
 
-[node name="PositionRight" type="Button" parent="."]
+[node name="PositionRight" type="Button" parent="." unique_id=2008334501]
 auto_translate_mode = 1
 layout_mode = 1
 anchors_preset = 8
@@ -110,14 +122,53 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 320.0
-offset_top = 28.0
-offset_right = 512.0
-offset_bottom = 92.0
+offset_left = 295.0
+offset_top = -32.0
+offset_right = 487.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Position Hover Right"
 script = ExtResource("1_voms5")
-animate_scale = false
 animate_position = true
-position_value = Vector2(30, 0)
+position_offset = Vector2(15, 0)
+
+[node name="CustomProperty(Modulate)" type="Button" parent="." unique_id=507277835]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -473.0
+offset_top = 94.0
+offset_right = -232.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Custom Animation (Modulate)"
+script = ExtResource("1_voms5")
+animate_scale = false
+position_offset = Vector2(15, 0)
+custom_animations = Array[ExtResource("2_ytiva")]([SubResource("Resource_dar0o")])
+
+[node name="CustomProperty(Text)" type="Button" parent="." unique_id=2011908269]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 39.0
+offset_top = 94.0
+offset_right = 239.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Custom Animation"
+script = ExtResource("1_voms5")
+animate_scale = false
+position_offset = Vector2(15, 0)
+custom_animations = Array[ExtResource("2_ytiva")]([SubResource("Resource_ytiva")])
