@@ -5,7 +5,7 @@ A custom button node for Godot that provides smooth, container-safe hover animat
 
 ## Features
 * **Container-Safe Animations:** Uses Godot's new `offset_transform` properties. Your buttons will now animate perfectly inside `VBoxContainer`, `HBoxContainer`, and other UI layouts without fighting the container or breaking the UI flow.
-* **Custom Property Animations:** Want to animate the button's color, rotation, or a shader parameter? You can now animate *any* property via the Inspector without writing extra code.
+* **Custom Property Animations:** You can now animate *any* property via the Inspector without writing extra code.
 * **Highly Optimized:** Signal-based design uses zero CPU power while sitting idle. Smart tween management ensures animations never overlap or glitch if the mouse moves quickly.
 * **Auto-Centering:** Automatically scales perfectly from its center, even if the button is dynamically resized.
 
